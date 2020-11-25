@@ -1,0 +1,3 @@
+include ':eventstore'
+include ':app'
+rootProject.name = "Fitness test"
