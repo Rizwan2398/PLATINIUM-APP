@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="0dp"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:background="#FFFFFF"
+        android:shadowColor="#F8F4F4"
+        android:text="BACK"
+        app:fontFamily="@font/audiowide"
+        android:onClick="backbtn"
+        android:textColor="#FA0000"
+        android:textColorHighlight="#F8F8F8"
+        android:textColorHint="#FDFDFD"
+        android:textColorLink="#F3EFEF"
+        android:textSize="18sp" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="364dp"
+
+        android:background="#F1EDED"
+        android:unfocusedMonthDateColor="@android:color/holo_red_dark"
+        android:weekNumberColor="@android:color/holo_red_dark"
+        android:weekSeparatorLineColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:background="#FDF8F8"
+        android:onClick="InsertDatabase"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/save"
+        android:textColor="#FF0000"
+        android:textColorHighlight="@color/Black"
+        android:textColorHint="@color/Black"
+        android:textColorLink="@color/Black"
+        app:fontFamily="@font/audiowide" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="425dp"
+        android:autofillHints=""
+        android:background="#050505"
+        android:ems="10"
+        android:hint="@string/add_exercise_details"
+        android:inputType="textPersonName"
+        android:shadowColor="#FF0000"
+        android:text="@string/event_name"
+        android:textColor="#FA0101"
+        android:textColorHighlight="#DF0404"
+        android:textColorHint="#AE2E2E"
+        android:textColorLink="#E40000"
+        android:textSize="24sp"
+        app:fontFamily="@font/audiowide" />
+
+</RelativeLayout>
